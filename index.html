@@ -1,129 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аукцион вещей, в которые никто не верил</title>
-    <!-- Сначала подключаем шрифты -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Потом свои стили -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Raleway, sans-serif;
-            min-width: 320px;
-            overflow-x: hidden;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Оно тебе надо</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Raleway, Arial, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+    a { color: inherit; }
+  </style>
 </head>
 <body>
-    <header>
-        <!-- Хедер -->
-        <div style="width: 1100px; height: 293px; position: relative; overflow: hidden; margin: 0 auto;">
-            <div style="width: 236.49px; left: 811px; top: 144px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; line-height: 24.30px; word-wrap: break-word">наб. Принсенграхт 263- 265, Амстердам</div>
-            <div style="width: 129.72px; height: 0px; left: 810px; top: 143px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="width: 239.48px; height: 24px; left: 810px; top: 119px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; line-height: 24.30px; word-wrap: break-word">info@sobaka.ge</div>
-            <div style="width: 131.71px; height: 0px; left: 810.52px; top: 119px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="width: 239.48px; height: 24px; left: 810.52px; top: 95px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; line-height: 24.30px; word-wrap: break-word">+9 999 555 5555</div>
-            <a href="/" style="text-decoration: none;">
-                <div style="width: 148px; height: 105px; left: 478px; top: 92px; position: absolute; overflow: hidden">
-                    <div style="width: 124.05px; height: 94.84px; left: 11.39px; top: 2.79px; position: absolute; outline: 6px black solid; outline-offset: -3px"></div>
-                    <div style="width: 129.11px; height: 104.65px; left: 9.03px; top: 1.16px; position: absolute; background: black"></div>
-                </div>
-            </a>
-            <div style="width: 110px; height: 0px; left: 331.48px; top: 155px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="left: 331.48px; top: 133px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; word-wrap: break-word">об аукционе</div>
-            <div style="width: 6px; height: 6px; left: 312px; top: 142px; position: absolute; border-radius: 9999px; border: 0.50px black solid"></div>
-            <div style="width: 151px; height: 0px; left: 148.48px; top: 155px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="left: 148.48px; top: 133px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; word-wrap: break-word">посмотреть лоты</div>
-            <div style="width: 6px; height: 6px; left: 130px; top: 142px; position: absolute; border-radius: 9999px; border: 0.50px black solid"></div>
-            <div style="left: 50px; top: 133px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; word-wrap: break-word">главная</div>
+
+  <!-- Шапка -->
+  <header style="background: white;">
+    <div style="width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:30px 0;">
+      <!-- Логотип -->
+      <a href="/" style="display:inline-block;">
+        <img src="logo-black.svg" alt="Логотип" style="height:60px;">
+      </a>
+
+      <!-- Навигация -->
+      <nav style="display:flex; gap:40px; font-size:18px; font-weight:400;">
+        <a href="/" style="text-decoration:none;">главная</a>
+        <a href="#lots" style="text-decoration:none;">посмотреть лоты</a>
+        <a href="#about" style="text-decoration:none;">об аукционе</a>
+      </nav>
+
+      <!-- Контакты -->
+      <div style="text-align:right; font-size:18px; font-weight:400; line-height:1.4;">
+        <div>+9 999 555 5555</div>
+        <div>info@sobaka.ge</div>
+        <div>наб. Принсенграхт 263-265, Амстердам</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Кавер -->
+  <section style="width:1100px; height:757px; margin:0 auto; position:relative; overflow:hidden;">
+    <img src="cover.jpg" alt="Аукцион вещей, в которые никто не верил" style="width:100%; height:100%; object-fit:cover;">
+    <div style="position:absolute; inset:0; background:black; opacity:0.6;"></div>
+
+    <h1 style="position:absolute; top:165px; left:50px; color:white; font-size:100px; font-weight:700; text-transform:uppercase; letter-spacing:30px; line-height:1.15;">
+      оНО<br>ТЕБЕ<br>НАДО
+    </h1>
+
+    <a href="#lots" style="position:absolute; bottom:50px; right:50px; border:1px solid white; padding:12px 40px; font-size:22px; font-weight:500; text-transform:uppercase; color:white; text-decoration:none;">
+      Сделать ставку
+    </a>
+  </section>
+
+  <!-- Лоты -->
+  <section id="lots" style="width:1052px; margin:80px auto;">
+    <h2 style="font-size:40px; font-weight:700; text-transform:uppercase; margin-bottom:40px;">Лоты</h2>
+    
+    <div style="display:flex; justify-content:space-between; gap:20px;">
+      <!-- Карточка 1 -->
+      <article style="position:relative; width:334px; height:596px; overflow:hidden;">
+        <img src="card-lot-01.jpg" alt="Фильм режиссёра, который бросил киношколу" style="width:100%; height:100%; object-fit:cover;">
+        <div style="position:absolute; inset:0; background:rgba(0,0,0,0.6);"></div>
+        <div style="position:absolute; top:40px; left:40px; right:40px; font-size:22px; font-weight:700; text-transform:uppercase; text-decoration:underline; color:white;">
+          Фильм режиссёра, который бросил киношколу
         </div>
-    </header>
+        <p style="position:absolute; bottom:40px; left:40px; right:40px; color:white; font-size:20px; font-weight:400; line-height:1.4;">
+          Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+        </p>
+      </article>
 
-    <main>
-        <!-- Кавер -->
-        <section style="width: 1100px; height: 757px; position: relative; overflow: hidden; margin: 0 auto;">
-            <img style="width: 1100px; height: 757px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/1100x757" alt="Аукцион вещей, в которые никто не верил" />
-            <div style="width: 1100px; height: 757px; left: 0px; top: 0px; position: absolute; opacity: 0.60; background: black"></div>
-            <div style="width: 256px; height: 51px; left: 794px; top: 656px; position: absolute; border: 1px white solid"></div>
-            <div style="width: 193px; height: 28px; left: 825px; top: 668px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Raleway; font-weight: 500; text-transform: uppercase; word-wrap: break-word">Сделать ставку</div>
-            <div style="left: 50px; top: 668px; position: absolute"><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; word-wrap: break-word">Аукцион</span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; letter-spacing: 19.80px; word-wrap: break-word"> </span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; word-wrap: break-word">вещей,</span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; letter-spacing: 17.60px; word-wrap: break-word"> </span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; letter-spacing: 24.20px; word-wrap: break-word">в</span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; word-wrap: break-word">которые</span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; letter-spacing: 17.60px; word-wrap: break-word"> </span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; word-wrap: break-word">никто</span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; letter-spacing: 19.80px; word-wrap: break-word"> </span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; word-wrap: break-word">не</span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; letter-spacing: 17.60px; word-wrap: break-word"> </span><span style="color: white; font-size: 22px; font-family: Raleway; font-weight: 400; text-transform: uppercase; line-height: 28px; word-wrap: break-word">верил</span></div>
-            <div style="left: 663px; top: 435px; position: absolute; text-align: right; color: white; font-size: 100px; font-family: Raleway; font-weight: 700; text-transform: uppercase; line-height: 115px; letter-spacing: 30px; word-wrap: break-word">НАДО</div>
-            <div style="left: 380.50px; top: 300px; position: absolute; text-align: center; color: white; font-size: 100px; font-family: Raleway; font-weight: 700; text-transform: uppercase; line-height: 115px; letter-spacing: 30px; word-wrap: break-word">ТЕБЕ</div>
-            <div style="left: 50px; top: 165px; position: absolute; color: white; font-size: 100px; font-family: Raleway; font-weight: 700; text-transform: uppercase; line-height: 115px; letter-spacing: 30px; word-wrap: break-word">оНО</div>
-        </section>
-
-        <!-- Лотс -->
-        <section style="width: 1052px; height: 723px; position: relative; margin: 0 auto;">
-            <div style="width: 191px; height: 0px; left: 40px; top: 725px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="left: 40px; top: 700px; position: absolute; color: black; font-size: 20px; font-family: Raleway; font-weight: 400; word-wrap: break-word">посмотреть больше</div>
-            <div style="width: 334px; height: 596px; left: 718px; top: 74px; position: absolute">
-                <img style="width: 334px; height: 596px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/334x596" alt="Картина, которую повторит даже 5-летний сын маминой подруги" />
-                <div style="width: 334px; height: 596px; left: 0px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.60)"></div>
-                <div style="width: 254px; left: 40px; top: 284px; position: absolute; color: white; font-size: 20px; font-family: Raleway; font-weight: 400; line-height: 24px; word-wrap: break-word">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</div>
-                <div style="width: 254px; height: 110px; left: 40px; top: 48px; position: absolute; color: white; font-size: 22px; font-family: Raleway; font-weight: 700; text-decoration: underline; text-transform: uppercase; line-height: 26.40px; word-wrap: break-word">Картина, которую повторит даже 5-летний сын маминой подруги</div>
-            </div>
-            <div style="width: 334px; height: 596px; left: 359px; top: 74px; position: absolute">
-                <img style="width: 334px; height: 596px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/334x596" alt="Книга, где описан один скучный день из жизни рекламного агента" />
-                <div style="width: 334px; height: 596px; left: 0px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.60)"></div>
-                <div style="width: 254px; left: 40px; top: 188px; position: absolute; color: white; font-size: 20px; font-family: Raleway; font-weight: 400; line-height: 24px; word-wrap: break-word">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</div>
-                <div style="width: 254px; height: 110px; left: 40px; top: 48px; position: absolute; color: white; font-size: 22px; font-family: Raleway; font-weight: 700; text-decoration: underline; text-transform: uppercase; line-height: 26.40px; word-wrap: break-word">Книга, где описан один скучный день из жизни рекламного агента</div>
-            </div>
-            <div style="width: 334px; height: 596px; left: 0px; top: 74px; position: absolute">
-                <img style="width: 334px; height: 596px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/334x596" alt="Фильм режиссёра, который бросил киношколу" />
-                <div style="width: 334px; height: 596px; left: 0px; top: 0px; position: absolute; background: rgba(0, 0, 0, 0.60)"></div>
-                <div style="width: 254px; height: 144px; left: 40px; top: 404px; position: absolute; color: white; font-size: 20px; font-family: Raleway; font-weight: 400; line-height: 24px; word-wrap: break-word">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</div>
-                <div style="width: 254px; height: 82px; left: 40px; top: 48px; position: absolute; color: white; font-size: 22px; font-family: Raleway; font-weight: 700; text-decoration: underline; text-transform: uppercase; line-height: 26.40px; word-wrap: break-word">Фильм режиссёра, который бросил киношколу</div>
-            </div>
-            <div style="left: 40px; top: 0px; position: absolute; color: black; font-size: 40px; font-family: Raleway; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Лоты</div>
-        </section>
-
-        <!-- абаут -->
-        <section style="width: 1052px; height: 595px; position: relative; margin: 0 auto;">
-            <div style="width: 693px; height: 449px; left: 359px; top: 133px; position: absolute">
-                <div style="width: 688px; left: 0px; top: 150px; position: absolute; color: black; font-size: 20px; font-family: Raleway; font-weight: 400; line-height: 24px; word-wrap: break-word">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</div>
-                <div style="width: 693px; left: 0px; top: 294px; position: absolute; color: black; font-size: 20px; font-family: Raleway; font-weight: 400; line-height: 24px; word-wrap: break-word">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря<br/>на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </div>
-                <div style="left: 0px; top: 3px; position: absolute; color: black; font-size: 40px; font-family: Raleway; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Об аукционе</div>
-            </div>
-            <div style="width: 240px; height: 240px; left: 47px; top: 35px; position: absolute">
-                <div style="width: 240px; height: 240px; left: 0px; top: 0px; position: absolute; background: black; border-radius: 9999px"></div>
-                <div style="width: 148px; height: 114px; left: 46.48px; top: 64px; position: absolute; overflow: hidden">
-                    <div style="width: 136px; height: 102px; left: 7px; top: 3px; position: absolute; outline: 6px white solid; outline-offset: -3px"></div>
-                    <div style="width: 141.54px; height: 112.55px; left: 4.42px; top: 1.25px; position: absolute; background: white"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Футер -->
-        <div style="width: 1100px; height: 180px; position: relative; margin: 0 auto;">
-            <div style="width: 240px; left: 810px; top: 1px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 48px; display: inline-flex">
-                <div style="width: 48px; height: 48px; border-radius: 9999px; border: 1px black solid"></div>
-                <div style="width: 26px; height: 20px; background: black"></div>
-                <div style="width: 8.41px; height: 10.13px; background: black"></div>
-                <div style="width: 48px; height: 48px; border-radius: 9999px; border: 1px black solid"></div>
-                <div style="width: 29.12px; height: 18px; background: black"></div>
-                <div style="width: 48px; height: 48px; border-radius: 9999px; border: 1px black solid"></div>
-                <div style="width: 17px; height: 22px; background: black"></div>
-            </div>
-            <div style="width: 107px; height: 0px; left: 496.60px; top: 65px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="width: 118.80px; left: 490.60px; top: 43px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; word-wrap: break-word">об аукционе</div>
-            <div style="width: 146px; height: 0px; left: 477.60px; top: 44px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="width: 163.90px; left: 468.60px; top: 22px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; word-wrap: break-word">посмотреть лоты</div>
-            <div style="width: 73.70px; left: 513.70px; top: 1px; position: absolute; text-align: center; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; word-wrap: break-word">главная</div>
-            <a href="tel:+99995555555" style="text-decoration: none;">
-                <div style="width: 264px; height: 24px; left: 50.57px; top: 0px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; line-height: 24.30px; word-wrap: break-word">+9 999 555 5555</div>
-            </a>
-            <a href="mailto:info@sobaka.ge" style="text-decoration: none;">
-                <div style="width: 264px; height: 24px; left: 50px; top: 24px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; line-height: 24.30px; word-wrap: break-word">info@sobaka.ge</div>
-            </a>
-            <div style="width: 260.70px; left: 51.10px; top: 49px; position: absolute; color: black; font-size: 18px; font-family: Raleway; font-weight: 400; line-height: 24.30px; word-wrap: break-word">наб. Принсенграхт 263-265, Амстердам</div>
-            <div style="width: 131px; height: 0px; left: 51px; top: 48px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
-            <div style="width: 131px; height: 0px; left: 51px; top: 24px; position: absolute; outline: 1px black solid; outline-offset: -0.50px"></div>
+      <!-- Карточка 2 -->
+      <article style="position:relative; width:334px; height:596px; overflow:hidden;">
+        <img src="card-lot-02.jpg" alt="Книга, где описан один скучный день из жизни рекламного агента" style="width:100%; height:100%; object-fit:cover;">
+        <div style="position:absolute; inset:0; background:rgba(0,0,0,0.6);"></div>
+        <div style="position:absolute; top:40px; left:40px; right:40px; font-size:22px; font-weight:700; text-transform:uppercase; text-decoration:underline; color:white;">
+          Книга, где описан один скучный день из жизни рекламного агента
         </div>
-    </footer>
+        <p style="position:absolute; bottom:40px; left:40px; right:40px; color:white; font-size:20px; font-weight:400; line-height:1.4;">
+          Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский... Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+        </p>
+      </article>
+
+      <!-- Карточка 3 -->
+      <article style="position:relative; width:334px; height:596px; overflow:hidden;">
+        <img src="card-lot-03.jpg" alt="Картина, которую повторит даже 5-летний сын маминой подруги" style="width:100%; height:100%; object-fit:cover;">
+        <div style="position:absolute; inset:0; background:rgba(0,0,0,0.6);"></div>
+        <div style="position:absolute; top:40px; left:40px; right:40px; font-size:22px; font-weight:700; text-transform:uppercase; text-decoration:underline; color:white;">
+          Картина, которую повторит даже 5-летний сын маминой подруги
+        </div>
+        <p style="position:absolute; bottom:40px; left:40px; right:40px; color:white; font-size:20px; font-weight:400; line-height:1.4;">
+          Ну действительно, там линия, тут кружочек... Никаких полей, лесов, котиков. А ведь это одна из революционных работ Кандинского.
+        </p>
+      </article>
+    </div>
+
+    <a href="#" style="display:inline-block; margin-top:30px; font-size:20px; text-decoration:none; border-bottom:1px solid black;">
+      посмотреть больше
+    </a>
+  </section>
+
+  <!-- О нас -->
+  <section id="about" style="width:1052px; margin:100px auto; display:flex; gap:40px; align-items:flex-start;">
+    <div style="flex:0 0 240px; display:flex; justify-content:center; align-items:center; background:black; border-radius:50%; width:240px; height:240px;">
+      <img src="logo-white.svg" alt="Логотип белый" style="width:148px;">
+    </div>
+    <div style="flex:1;">
+      <h2 style="font-size:40px; font-weight:700; text-transform:uppercase; margin-bottom:30px;">Об аукционе</h2>
+      <p style="font-size:20px; line-height:1.5; margin-bottom:20px;">
+        Здесь вы не встретите очередное собрание скучных старинных вещей. Наши лоты — это то, во что никто не верил. 
+        Вещи, которые когда-то казались бессмысленными, странными или даже смешными. 
+      </p>
+      <p style="font-size:20px; line-height:1.5;">
+        Но именно они изменили историю искусства, литературы и кино. Мы собираем их, чтобы напомнить: 
+        каждый риск может оказаться великим открытием.
+      </p>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer style="background:white; padding:40px 0; border-top:1px solid #ddd;">
+    <div style="width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+      <!-- Контакты -->
+      <div style="font-size:18px; font-weight:400; line-height:1.4;">
+        <div>+9 999 555 5555</div>
+        <div>info@sobaka.ge</div>
+        <div>наб. Принсенграхт 263-265, Амстердам</div>
+      </div>
+
+      <!-- Меню -->
+      <nav style="display:flex; flex-direction:column; gap:8px; text-align:center; font-size:18px;">
+        <a href="/" style="text-decoration:underline;">главная</a>
+        <a href="#lots" style="text-decoration:none;">посмотреть лоты</a>
+        <a href="#about" style="text-decoration:none;">об аукционе</a>
+      </nav>
+
+      <!-- Соцсети -->
+      <div style="display:flex; gap:20px;">
+        <a href="#"><img src="yt.svg" alt="YouTube" style="width:40px; height:40px;"></a>
+        <a href="#"><img src="vk.svg" alt="VK" style="width:40px; height:40px;"></a>
+        <a href="#"><img src="pinterest.svg" alt="Pinterest" style="width:40px; height:40px;"></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
